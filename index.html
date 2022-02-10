@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Sulphur+Point&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/ion.png">
+    <title>Portfolio</title>
+</head>
+
+<body id="back">
+    <div id="changer"></div>
+    <nav id="navbar">
+        <div id="star-nav"></div>
+        <div class="navcontainer" >
+            <div id="navball"></div>
+            <div class="navbar box-section" id="nav-main">
+                <a href="#welcome-section">
+                    <div class="nav-box">
+                        <p>H<br>O<br>M<br>E</p>
+                        <img src="./images/arrow.svg">
+                    </div>
+                </a>
+                <a href="#section-1">
+                    <div class="nav-box">
+                        <p>P<br>R<br>O<br>J<br>E<br>C<br>T<br>S</p>
+                        <img src="./images/arrow.svg">
+                    </div>
+                </a>
+                <a href="#contact">
+                    <div class="nav-box">
+                        <p>C<br>O<br>N<br>T<br>A<br>C<br>T</p>
+                        <img src="./images/arrow.svg">
+                    </div>
+                </a>
+                <a href="#gallery">
+                    <div class="nav-box">
+                        <p>G<br>A<br>L<br>L<br>E<br>R<br>Y</p>
+                        <img src="./images/arrow.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="welcome-section">
+        <h1 style="display: none;">a</h1>
+        <a href="#section-1"><img id="landing-image" src="./images/webarrow.png" alt="Carl Kjellman, Web developer & Programmer"></a>
+    </section>
+    <div class="empty-space"></div>
+    <main>
+        <section id="section-1" class="project-tile">
+            <div class="section-projects project-tile">
+                <h2>Highlighted Projects</h2>
+                <div id="projects" class="box-section project-tile">
+                    <div id="decoration-line-top" class="project-tile"></div>
+                    <div id="decoration-line-side"></div>
+                    <div id="decoration-line-bottom"></div>
+                    <a class="projectscontainer" href="https://carlkj.github.io/wildlife-form/">
+                        <div class="hover-image" id="project-1">
+                            <p class="classy-font project-text">Wildlife Incident Report Form</p>
+                        </div>
+                    </a>
+                    <a class="projectscontainer" href="https://carlkj.github.io/technical-document/">
+                        <div class="hover-image" id="project-2">
+                            <p class="classy-font project-text">Technical Document Page</p>
+                        </div>
+                    </a>
+                    <a class="projectscontainer" href="https://carlkj.github.io/date-time-example/">
+                        <div class="hover-image" id="project-3">
+                            <p class="classy-font project-text">Date & Time Example</p>
+                        </div>
+                    </a>
+                    <a class="projectscontainer" href="https://carlkj.github.io/fcc-tribute/">
+                        <div class="hover-image" id="project-4">
+                            <p class="classy-font project-text">Tribute Page</p>
+                        </div>
+                    </a>
+                    <a class="projectscontainer" href="https://carlkj.github.io/fcc-landing-page/">
+                        <div class="hover-image" id="project-5">
+                            <p class="classy-font project-text">Landing Page Example</p>
+                        </div>
+                    </a>
+                    <a class="projectscontainer hover-image" id="more-container" href="">
+                        <h3 class="classy-font" id="more">See All Projects</h3>
+                        <div class="hover-image" id="more-projects">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="section-contact" id="contact">
+                <h2>Contact Me!</h2>
+                <div class="box-section contact-box" style="z-index: 3;">
+                    <div class="decorativecorner"></div>
+                    <a id="profile-link" href="https://github.com/CarlKj" target="_blank">
+                        <div class="flex-contact">
+                            <img src="./images/Vectorcontacticon.png" alt="Github">
+                            <p>@CarlKj</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-section contact-box" style="z-index: 2;">
+                    <div class="decorativeline"></div>
+                    <a href="#blank_" onclick="copyToClipboard(email)">
+                        <div class="flex-contact">
+                            <img src="./images/Vectorcontacticon-1.png" alt="Email">
+                            <p id="email">Carlkjellmans@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box-section contact-box" style="z-index: 1;">
+                    <div class="decorativeline"></div>
+                    <a href="#blank_" onclick="copyToClipboard(phone)">
+                        <div class="flex-contact">
+                            <img src="./images/Vectorcontacticon-2.png" alt="Telephone number">
+                            <p id="phone-number">+358 44 9789189</p>
+                        </div>
+                </div>
+                </a>
+            </div>
+        </section>
+        <div>
+            <h2>Gallery</h2>
+            <section id="gallery" class="box-section">
+                <img src="./images/img1.png" id="image-display">
+                <div id="selector-container">
+                    <div id="arrow-left"></div>
+                    <div id="dot-selectors">
+                        <!-- js inserts here -->
+                    </div>
+                    <div id="arrow-right"></div>
+                </div>
+        </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="app.js"></script>
+
+</html>
